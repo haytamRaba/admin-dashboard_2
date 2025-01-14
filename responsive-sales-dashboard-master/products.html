@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>products</title>
+</head>
+<body>
+  <header class="header">
+    <div class="menu-icon" onclick="openSidebar()">
+      <span class="material-icons-outlined">menu</span>
+    </div>
+    <div class="header-left">
+      <span class="material-icons-outlined">search</span>
+    </div>
+    <div class="header-right">
+      <span class="material-icons-outlined">notifications</span>
+      <span class="material-icons-outlined">email</span>
+      <span class="material-icons-outlined">account_circle</span>
+    </div>
+  </header>
+
+  <div class="crud">
+    <div class="head">
+      <h2>Product Management System</h2>
+    </div>
+
+    <div class="inputs">
+        <input type="text" id="title" placeholder="title">
+        <div class="price">
+          <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+          <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+          <!-- <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads"> -->
+          <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+          <small id="total">---</small>
+        </div>
+        <input type="number" id="count" placeholder="count">
+        <input type="text" id="category" placeholder="category">
+        <button id="submit">Create</button>
+    </div>
+    
+  <div class="outputs">
+   
+    <div id="deletAll">
+
+    </div>
+    <table>
+        <tr>
+          <th>id</th>
+          <th>title</th>
+          <th>price</th>
+          <th>taxes</th>
+          <!-- <th>ads</th> -->
+          <th>discount</th>
+          <th>total</th>
+          <th>category</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+      <tbody id="tbody">
+        
+
+      </tbody>
+
+    </table>
+    </div>
+
+  </div>
+
+ 
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
